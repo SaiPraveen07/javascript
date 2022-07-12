@@ -1,158 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>javascript basics</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
   <body>
-    <h2>Demo JavaScript in Head</h2>
-
-    <p id="demo">A Paragraph</p>
-    <button type="button" onclick="myFunction()">Try it</button>
-
     <script>
-      document.getElementById("demo").innerHTML = "Hello JavaScript";
+      //arithmetic operator
+      let x; // Declaring Variable
 
-      // variables
-      let MyCountry = "India";
-      console.log(MyCountry);
-      let $country = "india";
-      console.log($country);
+      x = 10;
+      console.log(x);
 
-      let $ = 1;
-      let _ = 2;
-      console.log($ + _);
+      x = 20;
+      x += 30;
+      console.log(x);
 
-      const PI = 3.14;
-      console.log(PI);
+      x = 50;
+      x -= 20;
+      console.log(x);
+      x = 5;
+      x *= 25;
+      console.log(x);
+      x = 50;
+      x /= 10;
+      console.log(x);
 
-      const COLOR_RED = "#F00";
-      const COLOR_GREEN = "#0F0";
-      const COLOR_BLUE = "#00F";
-      const COLOR_ORANGE = "#FF7F00";
+      x = 100;
+      x %= 15;
+      console.log(x);
+      //string operator
+      let str1 = "Hello";
+      let str2 = " World!";
 
-      let color = COLOR_ORANGE;
-      console.log(color);
-      //undefined
-      let MyTeam;
-      console.log(MyTeam);
-      //Datatypes
-      //primitive datatypes
-      //string
-      let str = "Hello";
-      //number
-      let str2 = 77;
+      console.log(str1 + str2);
 
-      let x = { firstName: "sai", lastName: "Praveen" };
-      let name = "saipraveen";
-
-      console.log(`Hello, ${name}!`);
-
-      console.log(`the result is ${1 + 2}`);
-      //boolean
-      let operation = 4 > 1;
-      let operation1 = 3 < 2;
-
-      console.log(operation);
-      console.log(operation1);
-
-      //typeof
-      console.log(typeof "chennai");
-      console.log(typeof 4256);
-      console.log(typeof variable);
-
-      // array
-      const newspaper = ["Hindu", "times of india", "indian express"];
-      console.log(newspaper);
-      //object ex1
-      let employee1 = {
-    firstName: 'Peter',
-    lastName: 'Doe',
-    employeeId: 1
-};
-
-console.log('ssn' in employee1);
-console.log('employeeId' in employee1);
-//object ex2
-let person={
-    name:"saipraveen",
-    age:23,
-    team:"dev",
-    address:"chennai",
-    siblings:{
-        sister:"bbb",  
-        parent:{
-          father:"sss",
-          mother:"mmm"
-        }  
-    }
-    
-
-    
-}
-console.log(person)
-
-
-person.age=23
-console.log(person.age)
-
-console.log(person[`team`])
-
-console.log(person.siblings)
-console.log(person.siblings.sister)
-
-const person1 = {
-    firstName: "John",
-    lastName : "Doe",
-    id       : 5566,
-    fullName : function() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
-  //functions
-  function say(message) {
-    console.log(message);
-}
-
-let result = say('Hello');
-console.log('Result:', result);
-//function 2
-function newuser(lastname) {
-    let firstname;
-    //let lastname="rrr";
-    let msg= "hello" + firstname + "is" + lastname ;
-
-    console.log(msg)
-}
-newuser()
-newuser("nsre")
-
-function add(number1, number2){
-    console.log(number1+number2)
-}
-
-add(35,65)
-
-let z = myFunction(3, 9);   
-
-function myFunction(a, b) {
-  return a * b;             
-}
-function add() {
-    let sum = 0;
-    for (let i = 0; i < arguments.length; i++) {
-        sum += arguments[i];
-    }
-    return sum;
-}
-console.log(add(1, 2));
-console.log(add(1, 2, 3, 4, 5)); 
-
+      str1 += str2;
+      console.log(str1);
     </script>
   </body>
-</html>
-</body>
 </html>
